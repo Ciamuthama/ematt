@@ -1,5 +1,5 @@
 import * as React from 'react'
-import {FlatList, Text, View, Image} from 'react-native'
+import {FlatList} from 'react-native'
 import { product } from '../products'
 import ProductCard from '../screens/productCard'
 
@@ -11,7 +11,7 @@ export default function ProductList() {
             data={product}
             keyExtractor={(product) => product.id}
             renderItem={({ item }) =>
-                < ProductCard {...item} />
+                < ProductCard { ...item} />
             }
         />
     )
