@@ -1,5 +1,5 @@
 import {  Text, SafeAreaView, View} from "react-native";
-import ProductCard from "./screens/productCard";
+import ProductList from "./ProductList/productList";
 
 export default function App() {
   return (
@@ -9,7 +9,7 @@ export default function App() {
         New Collection
         </Text>
       </View>
-      < ProductCard className='dark:text-white'/>
+      < ProductList/>
     
     </SafeAreaView>
   );
